@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road"
+    android:orientation="vertical"
+    tools:context=".SignupPage">
+    <ImageView android:alpha="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/signup"
+        android:id="@+id/back"
+        android:padding="60sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="550sp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginBottom="5sp"
+            android:alpha="0.8"
+            android:textColor="#000000"
+            android:text="UPDATE INFO :"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fathers Name:"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="150sp"
+            android:id="@+id/fNameS"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="5sp"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Mother's Name:"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="150sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="5sp"
+            android:id="@+id/mNameS"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Name of College"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/collegeS"
+            android:layout_width="150sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="5sp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City:"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="150sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="5sp"
+            android:id="@+id/cityS"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="State:"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:layout_width="150sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="5sp"
+            android:id="@+id/stateS"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Birth:"
+                android:layout_gravity="center"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="100sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginBottom="5sp"
+                android:id="@+id/dobS"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_marginTop="15sp"
+                android:id="@+id/buttonDOB"
+                android:src="@drawable/datepicker"/>
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Semester:"
+            android:textStyle="bold"/>
+        <Spinner
+            android:id="@+id/semS"
+            android:layout_width="150sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="10sp"
+            android:layout_marginBottom="5sp"
+            android:alpha="0.3"
+            android:background="#000000"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2sp"
+                    android:text="Get from gallery"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:id="@+id/photoGallery"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2sp"
+                android:text="Take a Photo"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:id="@+id/takepic"/>
+            </LinearLayout>
+            <ImageView
+                android:layout_width="90sp"
+                android:layout_height="90sp"
+                android:id="@+id/upPic"
+                android:layout_marginLeft="40sp"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10sp"
+                android:text="Upload Pic"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center"
+                android:id="@+id/updatePic"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:text="Update"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:id="@+id/updateSubmit"/>
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

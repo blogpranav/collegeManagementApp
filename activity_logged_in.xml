@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/road"
+    android:orientation="vertical"
+    tools:context=".SignupPage">
+    <ImageView android:alpha="0.7"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/signup"
+        android:id="@+id/back1"
+        android:padding="60sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:text="Successfully Logged In !"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="17sp"/>
+
+    </LinearLayout>
+</RelativeLayout>

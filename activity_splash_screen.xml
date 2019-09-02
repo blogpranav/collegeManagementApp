@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/splash4"
+        android:id="@+id/pic1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="Welcome to"
+        android:textSize="50sp"
+        android:layout_marginTop="40sp"
+        android:id="@+id/main2"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="College Management App"
+        android:id="@+id/main3"
+        android:layout_below="@id/main2"/>
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="550dp"
+        android:id="@+id/pbar"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Hello Student!"
+        android:id="@+id/main"
+        android:layout_below="@+id/pbar"/>
+
+</RelativeLayout>
