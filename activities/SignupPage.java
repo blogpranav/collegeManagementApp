@@ -127,7 +127,7 @@ public class SignupPage extends AppCompatActivity {
         _user = user.getText().toString().trim();
         _phone = phone.getText().toString().trim();
         _cPassword = cPassword.getText().toString().trim();
-        String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+.+[a-z]+";
+        //String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+.+[a-z]+";
         boolean validName = true;
 
         if (_name.isEmpty()) {
@@ -138,17 +138,7 @@ public class SignupPage extends AppCompatActivity {
             name.setError(null);
 
         }
-        if (_email.length()>0) {
-            if (!_email.matches(emailPattern)) {
-                email.setError("Please fill an appropiate email");
-                email.requestFocus();
-                validName = false;
-
-            }
-        }
-        else{
-            email.setError(null);
-        }
+        //Add email validation
         if (_password.isEmpty()) {
             password.setError("Please fill an appropiate password");
             password.requestFocus();
